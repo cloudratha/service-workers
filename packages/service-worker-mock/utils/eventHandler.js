@@ -15,7 +15,7 @@ function createEvent(event, args) {
     case 'message':
       return new MessageEvent('message', args);
     default:
-      return new ExtendableEvent(event, args);
+      return new ExtendableEvent(event);
   }
 }
 
